@@ -30,8 +30,26 @@ while True:
     operator == tokens[0]
     number1 == tokens[1]
     number2 == tokens[2]
-    # elif operator == "add":
-    #     return add(number1,number2)
+    elif operator == "add":
+        return add(number1,number2)
 
+    elif operator == "subtract":
+        return subtract(number1,number2)
 
+    elif operator == "multiply":
+        return multiply(number1,number2)
 
+    elif operator == "divide":
+        return divide(number1,number2)
+
+    elif operator == "square":
+        return square(number1,number2)
+
+    elif operator == "cube":
+        return cube(number1,number2)
+
+    elif operator == "power":
+        return power(number1,number2)
+
+    elif operator == "mod":
+        return mod(number1,number2)
