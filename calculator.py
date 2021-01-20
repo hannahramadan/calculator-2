@@ -20,36 +20,37 @@ from arithmetic import (add, subtract, multiply, divide, square, cube,
 
 while True:
     user_input = input("Enter your equation: ")
-    tokens = user_input.split(" ")
     if user_input == "q":
         print("You will exit now")
         break
-    elif len(tokens) < 2:
+    tokens = user_input.split(" ")
+    operator = tokens[0]
+    number1 = float(tokens[1])
+    number2 = float(tokens[2])
+    if len(tokens) < 2:
         print("Not enough inputs.")
         continue
-    operator == tokens[0]
-    number1 == tokens[1]
-    number2 == tokens[2]
+
     elif operator == "add":
-        return add(number1,number2)
+        print(add(number1,number2))
 
     elif operator == "subtract":
-        return subtract(number1,number2)
+        print(subtract(number1,number2))
 
     elif operator == "multiply":
-        return multiply(number1,number2)
+        print(multiply(number1,number2))
 
     elif operator == "divide":
-        return divide(number1,number2)
+        print(divide(number1,number2))
 
     elif operator == "square":
-        return square(number1,number2)
+        print(square(number1,number2))
 
     elif operator == "cube":
-        return cube(number1,number2)
+        print(cube(number1,number2))
 
     elif operator == "power":
-        return power(number1,number2)
+        print(power(number1,number2))
 
     elif operator == "mod":
-        return mod(number1,number2)
+        print(mod(number1,number2))
